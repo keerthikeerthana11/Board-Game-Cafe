@@ -1,0 +1,269 @@
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    gap: 40px;
+}
+
+.content-side {
+    flex: 1;
+    max-width: 500px;
+    color: #0b2b40;
+    line-height: 1.6;
+}
+
+.content-side h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Diamond Grid Styling */
+.image-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* 3 columns */
+    gap: 15px;
+    transform: rotate(45-deg); /* Grid-ai mothamaaga suthuvatharku */
+}
+
+.diamond-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    /* Diamond shape-kaana mukkiya property */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.diamond-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Image-ai thiruppi neerkka vaikka */
+    transform: scale(1.4); 
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-grid {
+        grid-template-columns: repeat(2, 120px);
+    }
+}
+
+
+.form-container1 {
+    background-color: #000000; /* Black background */
+    color: #ffffff;           /* White text */
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.form-container1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: lowercase; /* Image-il ullapadiye lowercase */
+}
+
+.subtitle1 {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: #cccccc; /* Light grey for subtitle */
+}
+
+.event-form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+/* Input matrum Textarea styling */
+.input-group input, 
+.input-group textarea {
+    padding: 12px;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff; /* Typing text in white */
+    outline: none;
+}
+
+/* Input click seiyumpothu highlight aaga */
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #aaaaaa;
+}
+
+.send-btn {
+    background-color: #ffffff; /* White button */
+    color: #000000;           /* Black text */
+    padding: 12px 60px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #dddddd;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+.location-section {
+    background-color: #f1f9f5; /* Light mint background */
+    color: #0b2b40;           /* Dark blue text */
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1;
+    max-width: 400px;
+    min-width: 280px;
+}
+
+.info-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info-box p, .info-box li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.info-box a {
+    color: #0b2b40;
+    text-decoration: underline;
+}
+
+.hours-list {
+    list-style: disc;
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Mobile View Support */
+@media (max-width: 768px) {
+    .location-container {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+}
+/* ================= DARK MODE ================= */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* ABOUT SECTION */
+body.dark-mode .about-section {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .content-side {
+    color: #ffffff;
+}
+
+/* LOCATION SECTION */
+body.dark-mode .location-section {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+body.dark-mode .info-box a {
+    color: #ffffff;
+}
+
+body.dark-mode .info-box p,
+body.dark-mode .info-box li {
+    color: #cccccc;
+}
+
+/* FORM SECTION */
+body.dark-mode .form-container1 {
+    background-color: #000000; /* already dark but ensure consistency */
+}
+
+body.dark-mode .subtitle1 {
+    color: #aaaaaa;
+}
+
+body.dark-mode .input-group input,
+body.dark-mode .input-group textarea {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+body.dark-mode .send-btn {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode .send-btn:hover {
+    background-color: #dddddd;
+}

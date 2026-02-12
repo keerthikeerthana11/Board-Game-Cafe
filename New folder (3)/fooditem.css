@@ -1,0 +1,81 @@
+.menu-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    position:relative;
+}
+
+/* Arrows */
+.arrow{
+    font-size:40px;
+    color:#ccc;
+    cursor:pointer;
+    padding:20px;
+    user-select:none;
+    z-index:10;
+}
+
+/* Card */
+.menu-card{
+    width:900px;
+    height:550px;
+    background:#3f3f42;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    display:flex;
+}
+
+/* Columns Container */
+.slider{
+    display:flex;
+    width:200%;
+    height:100%;
+    transition:transform 0.6s ease;
+}
+
+/* Each Column */
+.menu-content{
+    width:50%;
+    padding:40px;
+    overflow-y:auto;
+}
+
+/* Menu Items */
+.menu-item{
+    margin-bottom:25px;
+}
+
+.menu-item h3{
+    color:#3cd2d2;
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.menu-item p{
+    color:#ddd;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* Vertical Text */
+.menu-center{
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:120px;
+    background:#2e2e30;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.menu-center h1{
+    color:white;
+    font-size:60px;
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    letter-spacing:5px;
+}

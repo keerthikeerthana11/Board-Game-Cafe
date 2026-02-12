@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Board Game Café</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <h1 class="logo">🎲 GameCafé</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Book Now</a>
+      <a href="#">Games</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Play • Eat • Repeat</h2>
+    <p>Book your table and enjoy 100+ board games with great food.</p>
+    <button class="btn">Book a Table</button>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="card">
+      <h3>🎯 100+ Games</h3>
+      <p>Strategy, Party, Family & Kids games</p>
+    </div>
+    <div class="card">
+      <h3>🍕 Café Menu</h3>
+      <p>Snacks, drinks & combo offers</p>
+    </div>
+    <div class="card">
+      <h3>📅 Easy Booking</h3>
+      <p>Reserve tables in seconds</p>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking">
+    <h2>Book Your Table</h2>
+    <form class="booking-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="date" required>
+      <input type="time" required>
+      <select required>
+        <option value="">Guests</option>
+        <option>2</option>
+        <option>4</option>
+        <option>6</option>
+        <option>8+</option>
+      </select>
+      <button class="btn">Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 GameCafé. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
