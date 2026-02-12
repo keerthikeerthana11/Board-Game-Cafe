@@ -1,0 +1,120 @@
+body {
+    background-color: #f1f9f5; /* Light green background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.reservation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #0b2b40;
+margin-bottom:50px;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #0b2b40;
+}
+.breadcrumb span {
+    margin: 0 5px;
+    color: #888;
+}
+
+/* Cursive Title Styling */
+.cursive-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+/* Form Styling */
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Dropdown and Input styling */
+.form-group select, 
+.form-group input {
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #0b2b40; /* Bottom line only */
+    background-color: transparent;
+    font-size: 1rem;
+    color: #0b2b40;
+    outline: none;
+    cursor: pointer;
+    appearance: none; /* Default arrow removal */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%230b2b40%22%20stroke-width%3D%221%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 18px;
+}
+
+/* Date input specific icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+/* ================= DARK MODE ================= */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .reservation-container {
+    color: #ffffff;
+}
+
+/* Breadcrumb */
+body.dark-mode .breadcrumb a {
+    color: #ffffff;
+}
+
+body.dark-mode .breadcrumb span {
+    color: #777;
+}
+
+/* Title */
+body.dark-mode .cursive-title {
+    color: #ffffff;
+}
+
+/* Form Fields */
+body.dark-mode .form-group select,
+body.dark-mode .form-group input {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+
+    /* White dropdown arrow */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%221%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22/%3E%3C/svg%3E");
+}
+
+/* Date icon brightness */
+body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

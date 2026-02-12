@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Cafe</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+
+    </style>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
+ <link rel="stylesheet" href="booknow.css">
+
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            SIP N' <span>PLAY</span>
+        </a>
+
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-4 align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link " href="gameCafe.html">Home Page</a>
+                </li>
+
+  <li class="nav-item">
+                    <a class="nav-link " href="#">Home Page2</a>
+                </li>
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                       data-bs-toggle="dropdown">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Board Games</a></li>
+                       <li><a class="dropdown-item" href="fooditem.html">Food & Drinks</a></li>
+
+                        <li><a class="dropdown-item" href="#">Private Booking</a></li>
+                    </ul>
+                </li>
+
+
+<li class="nav-item">
+                    <a class="nav-link" href="booknow.html">Book Now</a>
+                </li>
+
+ <li class="nav-item">
+                    <a class="nav-link" href="event.html">Event</a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                <!-- Dark / Light Toggle -->
+                <li class="nav-item">
+                    <img
+                        id="themeToggle"
+                        src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+                        alt="Light Mode"
+                    >
+                </li>
+  <li class="nav-item">
+                    <a class="nav-link" href="register.html">Login</a>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<div class="reservation-container">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="gameCafe.html">Home</a> <span>&gt;</span> <a href="#">Book Now</a>
+    </nav>
+
+    <!-- Title -->
+    <h1 class="cursive-title">Table Reservation</h1>
+
+    <!-- Form Fields -->
+    <form class="reservation-form">
+        <div class="form-group">
+            <label>Location</label>
+            <select>
+                <option>Jeevanagar 3rd Block</option>
+                <option>HSR Layout</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Party size</label>
+            <select>
+                <option>2 guests</option>
+                <option>4 guests</option>
+                <option>6 guests</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Date</label>
+            <input type="date" value="2026-11-02">
+        </div>
+
+        <div class="form-group">
+            <label>Time</label>
+            <select>
+                <option>5:30 PM</option>
+                <option>6:30 PM</option>
+                <option>7:30 PM</option>
+            </select>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Address Section -->
+        <div class="footer-col">
+            <h3>Address</h3>
+            <div class="branch">
+                <p><strong> jeevanagar 3rd Block</strong></p>
+                <p>68/150/4, Second Floor, 9th Main Rd,Madurai,630606</p>
+                <a href="tel:9987654321" class="phone-btn">9876543210</a>
+            </div>
+         
+            <p class="email">Email: sipandplay@gmail.com</p>
+        </div>
+
+        <!-- Opening Hours & Social Section -->
+        <div class="footer-col">
+            <h3>Opening Hours</h3>
+            <p>Tue - Fri: 12pm - 10:30pm</p>
+            <p>Sat - Sun: 12pm - 11pm</p>
+            <p>Mon: Closed</p>
+
+            <h3>Find Us</h3>
+            <ul class="social-links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Whatsapp</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="footer-col newsletter">
+            <h3>Subscribe to our newsletter for some sweet stuff</h3>
+            <form>
+                <label for="email">Email *</label>
+                <input type="email" id="email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 by Sip n' Play </p>
+    </div>
+</footer>
+
+
+
+
+
+
+<!-- JS -->
+<script>
+    const toggleIcon = document.getElementById("themeToggle");
+
+    toggleIcon.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            toggleIcon.src = "https://cdn-icons-png.flaticon.com/512/6714/6714978.png"; // Moon
+        } else {
+            toggleIcon.src = "https://cdn-icons-png.flaticon.com/512/869/869869.png"; // Sun
+        }
+    });
+</script>
+
+</body>
+</html>

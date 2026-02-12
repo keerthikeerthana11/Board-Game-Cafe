@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Form</title>
+<style>
+/* Page background */
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #121212; /* dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Form box */
+form{
+    background-color: #ffffff;   /* ✅ white form */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    color: #000000;              /* ✅ black text */
+}
+
+/* Label alignment */
+label{
+    display: inline-block;
+    width: 150px;
+    color: #000;                 /* ✅ label black */
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"]{
+    padding: 6px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;      /* better visibility */
+    color: #000;                 /* input text black */
+}
+
+/* Register button */
+.reg{
+    background-color: green;
+    color: white;
+    padding: 10px 170px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reg:hover{
+    background-color: darkgreen;
+}
+.acc{
+    text-align: center;
+}
+.create{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+</style>
+</head>
+
+<body>
+<form>
+    <div>
+<h1 class="create">Create Account</h1>
+        <label>First Name:</label>
+        <input type="text" placeholder="Enter your first name"><br><br>
+
+        <label>Last Name:</label>
+        <input type="text" placeholder="Enter your last name"><br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="it should contain @" required><br><br>
+
+        <label>Mobile:</label>
+        <input type="number" placeholder="only 10 digits are allowed" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female<br><br>
+
+<label>Password:</label>
+        <input type="text" placeholder="Create Password"><br><br>
+<label>Confirm Password:</label>
+        <input type="text" placeholder="Cofirm Password"><br><br>
+
+
+
+
+
+        <input type="submit" value="Sign up" class="reg">
+<h3 class="acc">
+  Already have an account?
+  <a class="" href="signin.html">Sign In</a>
+</h3>
+
+
+    </div>
+</form>
+</body>
+</html>
